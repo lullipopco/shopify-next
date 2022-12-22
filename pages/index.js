@@ -4,7 +4,7 @@ import Head from 'next/head'
 export default function Home({ products}) {
   return (
     <h1 className="text-3xl font-bold underline">
-      FUCK THIS SHIT
+      Dear sweetbabyjeebs
     </h1>
   )
 }

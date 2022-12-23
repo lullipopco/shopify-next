@@ -1,10 +1,11 @@
 import { getProductsInCollection } from "../lib/shopify"
-import Head from 'next/head'
+import ProductsList from "../components/ProductList"
 
-export default function Home({ }) {
+export default function Home({ products }) {
+  console.log(products)
   return (
-    <h1 className="text-3xl font-bold underline">
-      Dear sweetbabyjeebs
+    <h1 className="text-xl">
+      <ProductsList/>
     </h1>
   )
 }
@@ -12,6 +13,6 @@ export default function Home({ }) {
 export async function getStaticProps() {
   const products = await getProductsInCollection()
   return {
-    props: {  }, // will be passed to the page component as props
+    props: { products }, // will be passed to the page component as props
   }
 }

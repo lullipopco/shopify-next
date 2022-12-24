@@ -1184,6 +1184,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+heroicons@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.npmjs.org/heroicons/-/heroicons-2.0.13.tgz"
+  integrity sha512-INL+CaS5eJ8+kkXc6kz+i/4m6AWYESGpyorDIZDPH281vZWjV/W6coGmXVZdvyYVLIbPx0id4fPbWvCj//MW5A==
+
 iconv-lite@^0.6.2:
   version "0.6.3"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz"

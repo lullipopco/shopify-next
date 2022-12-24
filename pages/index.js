@@ -5,7 +5,7 @@ export default function Home({ products }) {
   console.log(products)
   return (
     <h1 className="text-xl">
-      <ProductsList/>
+      <ProductsList products={products}/>
     </h1>
   )
 }

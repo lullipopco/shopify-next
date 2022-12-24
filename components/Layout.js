@@ -1,18 +1,16 @@
-import React from 'react'
+import React  from 'react'
 import Nav from './Nav'
 
-export default function layout() {
+export default function Layout({ children }) {
   return (
-    <div>
+
         <div className="flex flex-col justify-between min-h-screen">
             <Nav />
             <main>
-                {children}
+              {children}
             </main>
-            <footer>
-                footer
-            </footer>    
+            <footer />
+
         </div>
-    </div>
   )
 }

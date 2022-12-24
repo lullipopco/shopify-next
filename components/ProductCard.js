@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
   
   
     return (
-        (<Link href={`/product/${handle}`} className="group">
+        (<Link href={`/products/${handle}`} className="group">
 
             <div className="w-full bg-gray-200 rounded-2xl overflow-hidden">
                 <div className="relative group-hover:opacity-75 h-72">

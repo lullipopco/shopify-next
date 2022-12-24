@@ -9,21 +9,21 @@ const ProductCard = ({ product }) => {
   
   
     return (
-        (<Link href={`/products/${handle}`} className="group">
+        <Link href={`/products/${handle}`} className="group" legacyBehavior>
 
-            <div className="w-full bg-gray-200 rounded-2xl overflow-hidden">
-                <div className="relative group-hover:opacity-75 h-72">
-                <Image
-                src={url}
-                alt={altText}
-                layout="fill"
-                onjectfit="cover"
-                />
+                <div className="w-full bg-gray-200 rounded-2xl overflow-hidden">
+                    <div className="relative group-hover:opacity-75 h-72">
+                    <Image
+                    src={url}
+                    alt={altText}
+                    layout="fill"
+                    onjectfit="cover"
+                    />
+                    </div>
                 </div>
-            </div>
-            <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
-            <p className="mt-1 text-sm textgray-700">{formatter.format(price)}</p>
-        </Link>)
+                <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
+                <p className="mt-1 text-sm textgray-700">{formatter.format(price)}</p>
+            </Link>
     );
 }
 
